@@ -5,8 +5,8 @@ Routes:
     /: Displays 'Hello HBNB!'.
     /hbnb: Displays 'HBNB'.
     /c/<text>: Displays 'C' followed by the value of <text>.
-    /python/(<text>): display 'Python' followed by the value of the <text>
-    the default value of text is "is cool"
+    /python/(<text>): display 'Python' followed by the value of the <text>.
+    the default value of text is "is cool".
 """
 from flask import Flask
 
