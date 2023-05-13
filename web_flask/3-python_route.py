@@ -5,8 +5,7 @@ Routes:
     /: Displays 'Hello HBNB!'.
     /hbnb: Displays 'HBNB'.
     /c/<text>: Displays 'C' followed by the value of <text>.
-    /python/(<text>): display 'Python' followed by the value of the <text>.
-    the default value of text is "is cool".
+    /python/(<text>): Displays 'Python' followed by the value of <text>.
 """
 from flask import Flask
 
@@ -35,7 +34,7 @@ def c(text):
 
 
 @app.route("/python", strict_slashes=False)
-@app.route("/pyton/<text>", strict_slashes=False)
+@app.route("/python/<text>", strict_slashes=False)
 def python(text="is cool"):
     """Displays 'Python' followed by the value of <text>.
     Replaces any underscores in <text> with slashes.
